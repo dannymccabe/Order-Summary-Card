@@ -1,0 +1,101 @@
+.card {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 0;
+  margin: 0;
+  max-width: 307px;
+  box-sizing: border-box;
+  box-shadow: 3px 41px 70px -20px rgba(56, 41, 224, 0.39);
+  -webkit-box-shadow: 3px 41px 70px -20px rgba(56, 41, 224, 0.39);
+  -moz-box-shadow: 3px 41px 70px -20px rgba(56, 41, 224, 0.39);
+
+  .background-image {
+    max-width: 100%;
+    align-self: flex-start;
+    border-radius: 2rem 2rem 0 0;
+  }
+
+  .text-container {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.7rem;
+
+    .title {
+      font-size: 1.5rem;
+      color: hsl(223, 47%, 23%);
+      margin: 0;
+    }
+    .paragraph {
+      color: hsl(224, 23%, 55%);
+      margin: 0;
+    }
+
+    .plan-container {
+      border-radius: 1rem;
+      background-color: hsl(225, 100%, 98%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      justify-content: space-between;
+      padding-left: 0.8rem;
+      padding-right: 0.8rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+
+      .plan-price {
+        margin: 0;
+        padding: 0;
+        color: hsl(223, 47%, 23%);
+
+        .plan-title {
+          padding: 0;
+          margin: 0;
+        }
+        .price {
+          color: hsl(224, 23%, 55%);
+          padding: 0;
+          margin: 0;
+        }
+      }
+      .change-link {
+        color: hsl(245, 75%, 52%);
+        font-weight: bold;
+      }
+    }
+
+    button {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+      font-weight: bolder;
+    }
+
+    .payment-button {
+      color: white;
+      background-color: hsl(245, 75%, 52%);
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 3px 41px 70px -20px rgba(56, 41, 224, 0.39);
+      -webkit-box-shadow: 3px 41px 70px -20px rgba(56, 41, 224, 0.39);
+      -moz-box-shadow: 3px 41px 70px -20px rgba(56, 41, 224, 0.39);
+      cursor: pointer;
+    }
+
+    .cancel-button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      color: hsl(224, 23%, 55%);
+    }
+  }
+}
